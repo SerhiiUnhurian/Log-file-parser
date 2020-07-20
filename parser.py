@@ -27,7 +27,7 @@ def display_results():
     ip_table = sorted(ip_frequency.items(), key=lambda x: x[1], reverse=True)
     url_table = sorted(url_frequency.items(), key=lambda x: x[1], reverse=True)
     print(tabulate(ip_table, headers=('IP', 'FREQUENCY'), tablefmt='pretty'))
-    print(tabulate(url_table, headers=('IP', 'FREQUENCY'), tablefmt='pretty'))
+    print(tabulate(url_table, headers=('URL', 'FREQUENCY'), tablefmt='pretty'))
 
 
 def main():
